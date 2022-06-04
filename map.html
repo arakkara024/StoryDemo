@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/map.css">
+    <title>Map</title>
+</head>
+<body>
+    <div class="wrapper">
+        <nav>
+            <a href="inventory.html" class="inventory-btn">INVENTORY</a>
+            <div class="btn-container">
+                <img src="mapReso/setting-icon.png" class="map-btn" id="setting-btn" alt="">
+                <img src="mapReso/back.png" alt="" class="map-btn" id="back">
+            </div>
+        </nav>
+
+        <div class="island-container">
+            <i class="fa fa-arrow-right right-arrow" aria-hidden="true"></i>
+            <div class="island-div">
+                <div class="item item1 odd-items"><img src="mapReso/usa.png" alt="" class="mainIsland"></div>
+                <div class="item2 small-item even-items">
+                   <h2 class="level1" id="level1">1</h2>
+                    <!-- <div class="level-island"><img src="mapReso/small-islands.png" alt="" class="small-islands"></div> -->
+                </div>
+                <div class="item3 small-item odd-items">
+                    <h2 class="level">2</h2>
+                    <!-- <div class="level-island"><img src="mapReso/small-islands.png" alt="" class="small-islands"></div> -->
+                </div>
+                <div class="item4 small-item even-items">
+                    <h2 class="level">3</h2>
+                    <!-- <div class="level-island"><img src="mapReso/small-islands.png" alt="" class="small-islands"></div> -->
+                </div>
+                <div class="item5 small-item odd-items">
+                    <h2 class="level">4</h2>
+                    <!-- <div class="level-island"><img src="mapReso/small-islands.png" alt="" class="small-islands"></div> -->
+                </div>
+                <div class="item6 small-item even-items">
+                    <h2 class="level">5</h2>
+                    <!-- <div class="level-island"><img src="mapReso/small-islands.png" alt="" class="small-islands"></div> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="start-modal" id="start-modal">
+            <div class="start-container">
+                <div class="start-cross-container" id="start-close"><h1 class="start-cross">+</h1></div>
+                <div class="start-header">USA STAGE 1</div>
+                <div class="info">
+                    START LEARNING PYTHON, ONE OF TODAY'S MOST IN DEMAND PROGRAMMING LANGUAGES. LET'S START OF
+                    BY PRINTING VARIOUS TEXTS
+                </div>
+                <div class="start-button">
+                    <a href="game.html" class="start">Start</a>
+                </div>       
+            </div>
+        </div>
+
+        <div class="exit-modal" id="exit-modal">
+            <div class="exit-container">
+                <div class="question">ARE YOU SURE YOU WANT TO EXIT</div>
+                <div class="buttons">
+                    <a href="menu.html" class="start">YES</a>
+                    <div class="no" id="no">NO</div>
+                </div>       
+            </div>
+        </div>
+
+        <div class="setting-modal" id="setting-modal">
+            <div class="setting-container">
+                <div class="cross-container" id="close"><h1 class="cross">+</h1></div>
+                <div class="bgm-container">
+                    <label for="slider">BGM</label>
+                    <div class="slidecontainer">
+                        <input type="range" min="1" max="100" value="20" class="slider" id="myRange">
+                    </div>
+                </div>
+                <div class="sfx-container">
+                    <label for="slider">SFX</label>
+                    <div class="slidecontainer">
+                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                    </div>
+                </div>
+                <a href="log-in.html" class="log-out">LOG OUT</a>
+            </div>
+        </div>
+    </div>
+    <script src="javascript/map.js"></script>
+
+</body>
+</html>

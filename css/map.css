@@ -1,0 +1,504 @@
+@import url('http://fonts.cdnfonts.com/css/cartoonist');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cartoonist', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Portrait Notification Styles */
+
+.portrait-notification {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cp {
+    position: absolute;
+    width: 50px;
+    height: 80px;
+    border: 1px solid white;
+    background-color: rgba(0,0,0,0);
+    border-radius: 5px;
+    margin-bottom: 5px;
+    top: 32%;
+    animation-name: cpAnimation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+/* Rotating Cellphone Animation */
+
+@keyframes cpAnimation {
+    0%{
+        transform: rotate(0);
+    } 
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+@media screen and (min-width: 320px) and (orientation: landscape){
+    .wrapper {
+        width: 100%;
+        height: 100vh;
+        background-image: url(/mapReso/floating\ island\ bg.png);
+        background-size: 100% 100%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .wrapper {
+        width: 100%;
+        height: 100vh;
+        background-image: url(/mapReso/map-bg.jpg);
+        background-size: 100% 100%;
+        overflow-x: hidden;
+    }
+
+    /* Nav Styles */
+
+    nav {
+        width: 100%;
+        height: 12%;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .inventory-btn{
+        width: 200px;
+        height: 50px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+        background-image: url(/image/buttons.png);
+        background-size: 100% 100%;
+        -webkit-text-stroke: 1px black;
+        background-repeat: no-repeat;
+        border: none;
+        border-radius: 20px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .btn-container {
+        width: 200px;
+        height: 100%;
+        align-self: flex-end;
+        margin-right: 10px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+    .map-btn {
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+    }
+
+
+    /* ISLAND STYLES */
+
+    .island-container {
+        width: 200%;
+        height: 88%;
+    }
+
+    .right-arrow {
+        position: absolute;
+        z-index: 3;
+        color: orangered;
+        font-size: 3.5rem;
+        top: 50%;
+        right: 30px;
+        cursor: pointer;
+    }
+
+    .island-div {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mainIsland {
+        width: 300px;
+        height: 300px;
+    }
+
+    .small-islands {
+        width: 170px;
+        height: 100px;
+    }
+
+    .item2, .item4, .item6 {
+        margin-top: 150px;
+    }
+
+    .item3, .item5 {
+        margin-top: 70px;
+    }
+
+    .small-item {
+        width: 170px;
+        height: 100px;
+        background-image: url(/mapReso/small-islands.png);
+        background-size: 100% 100%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+
+    .level1 {
+        width: 50px;
+        height: 45px;
+        padding: 5px;
+        font-size: 2rem;
+        color: white;
+        background-color: rgb(34, 180, 225);
+        position: absolute;
+        text-align: center;
+        border-radius: 50%;
+        top: -20px;
+        cursor: pointer;
+    }
+
+    .level {
+        width: 50px;
+        height: 45px;
+        padding: 5px;
+        font-size: 2rem;
+        color: white;
+        background-color: rgb(40, 40, 40);
+        position: absolute;
+        text-align: center;
+        border-radius: 50%;
+        top: -20px;
+        cursor: pointer;
+    }
+
+    .even-items {
+        animation-name: even-items-up;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+   
+    @keyframes odd-items-down {
+        50% {
+            transform: translateY(20%);
+        }
+
+        100% {
+            transform: translateY(0%);
+        }
+    }
+
+    .odd-items {
+        animation-name: odd-items-down;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes even-items-up {
+        50% {
+            transform: translateY(-50%);
+        }
+
+        100% {
+            transform: translateY(0%);
+        }
+    }
+
+    .start-modal {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: none;
+        place-items: center;
+        background-color: rgba(0, 0, 0, 0.585);
+    }
+
+    .start-container  {
+        width: 50%;
+        height: 70%;
+        padding: 50px 60px;
+        background-image: url(/image/log-in.png);
+        background-size: 100% 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        position: relative;
+    }
+
+    .start-cross-container {
+        border-radius: 50%;
+        background-color: rgb(192, 0, 0);
+        padding: 1px 20px;
+        position: absolute;
+        top: 0;
+        right: 20px;
+        cursor: pointer;
+        
+    }
+
+    .start-cross {
+        font-family: sans-serif;
+        font-size: 4rem;      
+        color: white;
+        transform: rotate(45deg);
+    }
+
+    .start-header {
+        width: 70%;
+        font-size: 2.5rem;
+        color: white;
+        text-align: center;
+        -webkit-text-stroke: 1px black;
+    }
+
+    .info {
+        width: 70%;
+        font-size: 1.6rem;
+        color: white;
+        text-align: center;
+        -webkit-text-stroke: 1px black;
+    }
+
+    .start-button {
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .start {
+        width: 90%;
+        margin-top: 30px;
+        font-size: 1.5rem;
+        padding: 15px;
+        text-align: center;
+        background-color: rgb(0, 192, 3);
+        border-radius: 20px;
+        color: white;
+        border: 1px solid black;
+        -webkit-text-stroke: 1px black;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+
+
+
+
+
+
+
+    /* SETTING MODAL STYLES */
+
+    .setting-modal {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: none;
+        place-items: center;
+        background-color: rgba(0, 0, 0, 0.585);
+    }
+
+    .setting-container  {
+        width: 50%;
+        height: 70%;
+        background-image: url(/image/settings.png);
+        background-size: 100% 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .cross-container {
+        border-radius: 50%;
+        background-color: rgb(192, 0, 0);
+        padding: 1px 20px;
+        position: absolute;
+        top: 0;
+        right: 20px;
+        cursor: pointer;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+
+    .cross {
+        font-family: sans-serif;
+        font-size: 4rem;      
+        color: white;
+        transform: rotate(45deg);
+    }
+
+    .bgm-container, .sfx-container {
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 30px auto;
+    }
+
+    label {
+        font-size: 2.5rem;
+        color: white;
+        -webkit-text-stroke: 1px black;
+        text-shadow: 2px 2px #2a2a2a;
+    }
+
+    .slidecontainer {
+        width: 80%;
+      }
+      
+      .slider {
+        -webkit-appearance: none;
+        width: 100%;
+        height: 15px;
+        border-radius: 5px;
+        background: #d25700;
+        outline: none;
+        opacity: 0.9;
+        -webkit-transition: .2s;
+        transition: opacity .2s;
+      }
+      
+      .slider:hover {
+        opacity: 1;
+      }
+      
+      .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 55px;
+        height: 55px;
+        border: 1px solid rgb(63, 63, 63);
+        border-radius: 50%;
+        background: #a94600;
+        cursor: pointer;
+      }
+      
+      .slider::-moz-range-thumb {
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        background: #a94600;
+        cursor: pointer;
+      }
+
+      .log-out {
+        width: 40%;
+        margin-top: 30px;
+        font-size: 1.5rem;
+        padding: 15px;
+        text-align: center;
+        background-color: rgb(192, 0, 0);
+        border-radius: 20px;
+        color: white;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+      }
+
+
+
+      /* EXIT MODAL STYLES */
+
+    .exit-modal {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: none;
+        place-items: center;
+        background-color: rgba(0, 0, 0, 0.585);
+    }
+
+    .exit-container  {
+        width: 50%;
+        height: 70%;
+        background-image: url(/image/settings.png);
+        background-size: 100% 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        padding: 20px
+    }
+
+    .question {
+        width: 70%;
+        font-size: 3rem;
+        color: white;
+        text-align: center;
+        -webkit-text-stroke: 2px black;
+    }
+
+    .buttons {
+        width: 70%;
+        height: 20%;
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .yes {
+        width: 40%;
+        font-size: 2rem;
+        padding: 10px 20px;
+        color: white;
+        background-color: rgb(114, 174, 23);
+        border-radius: 10px;
+        text-align: center;
+        -webkit-text-stroke: 1px black;
+        cursor: pointer;
+    }
+
+    .no {
+        width: 40%;
+        font-size: 2rem;
+        padding: 10px 20px;
+        color: white;
+        border-radius: 10px;
+        background-color: red;
+        text-align: center;
+        -webkit-text-stroke: 1px black;
+        cursor: pointer;
+    }
+
+
+}

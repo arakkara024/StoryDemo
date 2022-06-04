@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <title>Main Menu</title>
+</head>
+<body>
+     <!-- Portrait Notification (Alert) -->
+    <div class="portrait-notification">
+        <div class="cp"></div>
+        Please Rotate Your Screen To Landscape
+    </div>
+
+    <!-- Wrapper -->
+    <div class="wrapper">
+
+        <!-- Loading Screen -->
+        <div class="loading-screen">
+            <h1>LOADING <span class="dot1">.</span> <span class="dot2">.</span> <span class="dot3">.</span></h1>
+            <div class="box-container">
+                <div class="box box1"></div>
+                <div class="box box2"></div>
+                <div class="box box3"></div>
+                <div class="box box4"></div>
+            </div>  
+        </div>
+
+        <!-- Button Container -->
+            <div class="button-container fadeIn" id="button-container">
+                <a href="map.html">PLAY</a>
+                <a href="#" id="setting-btn">SETTINGS</a>
+            </div>
+    </div>
+
+    <div class="setting-modal" id="setting-modal">
+        <div class="setting-container">
+            <div class="cross-container" id="close"><h1 class="cross">+</h1></div>
+            <div class="bgm-container">
+                <label for="slider">BGM</label>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="100" value="20" class="slider" id="myRange">
+                </div>
+            </div>
+            <div class="sfx-container">
+                <label for="slider">SFX</label>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                </div>
+            </div>
+            <a href="log-in.html" class="log-out">LOG OUT</a>
+        </div>
+    </div>
+    <script src="javascript/setting.js"></script>
+</body>
+</html>

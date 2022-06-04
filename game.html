@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/game.css">
+    <title>Level 1</title>
+</head>
+<body>
+     <!-- Portrait Notification (Alert) -->
+     <div class="portrait-notification">
+        <div class="cp"></div>
+        Please Rotate Your Screen To Landscape
+    </div>
+
+    <!-- Wrapper -->
+    <div class="wrapper">
+        <div class="battle-div">
+            <nav>
+                <div class="btn-container">
+                    <img src="mapReso/setting-icon.png" class="map-btn" id="setting-btn" alt="">
+                    <img src="mapReso/back.png" alt="" class="map-btn" id="back">
+                </div>
+            </nav>
+
+            <div class="battle-field">
+                <div class="arvi-position">
+                    <img src="ARVI/avi 1.png" alt="" class="arvi movement" id="arvi">
+                </div>
+                <div class="enemy-position">
+                    <img src="enemies/automated bot.png" alt="" class="enemy movement" id="enemy">
+                </div>
+            </div>
+        </div>
+
+        <div class="question-div">
+            <div class="background">
+                <div class="challenge-div">
+                    <div class="f-question">
+                        <p class="question-para">print <span class="span1" id="span1"></span> "Python is a Programming Language" <span class="span2" id="span2"></span></p>
+                    </div>
+                    <div class="question-btn-container">
+                        <div class="option1" id="option1">( and )</div>
+                        <div class="option2" id="option2">{ and }</div>
+                        <div class="option3" id="option3">[ and ]</div>
+                    </div>
+                </div>
+    
+                <div class="answer-btn-div">
+                    <div class="reset" id="reset">RESET</div>
+                    <div class="submit" id="submit">SUBMIT</div>
+                </div>
+    
+                <div class="result-div">
+                    <div class="f-question-answer">
+                        <p class="question-para-answer" id="correct"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="exit-modal" id="exit-modal">
+        <div class="exit-container">
+            <div class="question">ARE YOU SURE YOU WANT TO EXIT?</div>
+            <div class="buttons">
+                <a href="menu.html" class="yes">YES</a>
+                <div class="no" id="no">NO</div>
+            </div>       
+        </div>
+    </div>
+
+    <div class="setting-modal" id="setting-modal">
+        <div class="setting-container">
+            <div class="cross-container" id="close"><h1 class="cross">+</h1></div>
+            <div class="bgm-container">
+                <label for="slider">BGM</label>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="100" value="20" class="slider" id="myRange">
+                </div>
+            </div>
+            <div class="sfx-container">
+                <label for="slider">SFX</label>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                </div>
+            </div>
+            <a href="log-in.html" class="log-out">LOG OUT</a>
+        </div>
+    </div>
+</div>
+<script src="javascript/game.js"></script>
+</body>
+</html>

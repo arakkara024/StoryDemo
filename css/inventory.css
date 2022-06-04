@@ -1,0 +1,240 @@
+@import url('http://fonts.cdnfonts.com/css/cartoonist');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cartoonist', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Portrait Notification Styles */
+
+.portrait-notification {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cp {
+    position: absolute;
+    width: 50px;
+    height: 80px;
+    border: 1px solid white;
+    background-color: rgba(0,0,0,0);
+    border-radius: 5px;
+    margin-bottom: 5px;
+    top: 32%;
+    animation-name: cpAnimation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+/* Rotating Cellphone Animation */
+
+@keyframes cpAnimation {
+    0%{
+        transform: rotate(0);
+    } 
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+@media screen and (min-width: 320px) and (orientation: landscape){
+    .wrapper {
+        width: 100%;
+        height: 100vh;
+        background-image: url(/mapReso/floating\ island\ bg.png);
+        background-size: 100% 100%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .portrait-notification {
+        display: none;
+    }
+
+    .wrapper {
+        width: 100%;
+        height: 100vh;
+        background-image: url(/image/inventorybg.png);
+        background-size: 100% 100%;
+        overflow-x: hidden;
+    }
+
+    .container {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.73);
+        display: flex;
+    }
+
+    .arvi-div {
+        width: 50%;
+        height: 100%;
+    }
+
+    .map-btn-container{
+        width: 100%;
+        height: 20%;
+        padding: 10px;
+    }
+
+    .map-btn {
+        width: 200px;
+        height: 50px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+        background-image: url(/image/buttons.png);
+        background-size: 100% 100%;
+        -webkit-text-stroke: 1px black;
+        background-repeat: no-repeat;
+        border: none;
+        border-radius: 20px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .arvi-img-div {
+        width: 100%;
+        height: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .arvi {
+        width: 300px;
+        height: 400px;
+        animation-name: arvi-animation;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes arvi-animation {
+        50% {
+            transform: translateY(5%);
+        }
+
+        100% {
+            transform: translateY(0%);
+        }
+    }
+
+    .inventory-div {
+        width: 50%;
+        height: 100%;
+        display: grid;
+        place-items: center;
+    }
+
+    .inventory-container {
+        width: 90%;
+        height: 90%;
+        border: 3px solid rgb(104, 44, 2);
+        background-color: rgb(208, 97, 17);
+        padding: 5px 50px;
+        border-radius: 20px;
+    }
+
+    .header-container {
+        width: 100%;
+        display: grid;
+        place-items: center;
+        padding: 20px;
+    }
+
+    .header {
+        font-size: 2rem;
+        color: white;
+        width: 100%;
+        text-align: center;
+        background-color: rgb(135, 60, 6);
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .item-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+        padding: 20px;
+        grid-gap: 20px;
+        place-items: center;
+    }
+
+    .item {
+        width: 90%;
+        height: 120px;
+        border-radius: 20px;
+        border: black solid 1px;
+        background-color: rgb(253, 222, 199);
+    }
+
+    .item1 {
+        background-image: url(/powerUp/ram.png);
+        background-size: 50% 50%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .item2 {
+        background-image: url(/powerUp/cpu.png);
+        background-size: 50% 50%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .item3 {
+        background-image: url(/powerUp/ram.png);
+        background-size: 50% 50%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .item4 {
+        background-image: url(/powerUp/harddrive.png);
+        background-size: 50% 50%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .item5 {
+        background-image: url(/powerUp/psu.png);
+        background-size: 50% 50%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .item6 {
+        background-image: url(/powerUp/fan.png);
+        background-size: 50% 50%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+}
