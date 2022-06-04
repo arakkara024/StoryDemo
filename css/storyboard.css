@@ -166,7 +166,7 @@ a {
         opacity: 0;
         width: 50%;
         height: 100%;
-        background-image: url(/image/1.png);
+        background-image: url(image/1.png);
         background-repeat: no-repeat;
         background-size: 99% 100%;
         transition: opacity 2s ease-in;
@@ -176,7 +176,7 @@ a {
         opacity: 0;
         width: 50%;
         height: 100%;
-        background-image: url(/image/2.png);
+        background-image: url(image/2.png);
         background-repeat: no-repeat;
         background-size: 99% 100%;
         background-position: right;
@@ -187,7 +187,7 @@ a {
         opacity: 0;
         width: 100%;
         height: 100%;
-        background-image: url(/image/3.png);
+        background-image: url(image/3.png);
         background-repeat: no-repeat;
         background-size: 100% 100%;
         transition: opacity 2s ease-in 4s;
@@ -197,7 +197,7 @@ a {
         opacity: 0;
         width: 100%;
         height: 100%;
-        background-image: url(/image/4.png);
+        background-image: url(image/4.png);
         background-repeat: no-repeat;
         background-size: 100% 100%;
         transition: opacity 2s ease-in 6s;
@@ -207,7 +207,7 @@ a {
         opacity: 0;
         width: 100%;
         height: 100%;
-        background-image: url(/image/5.png);
+        background-image: url(image/5.png);
         background-repeat: no-repeat;
         background-size: 100% 100%;
         transition: opacity 2s ease-in 8s;
@@ -217,7 +217,7 @@ a {
         opacity: 0;
         width: 50%;
         height: 100%;
-        background-image: url(/image/6.png);
+        background-image: url(image/6.png);
         background-repeat: no-repeat;
         background-size: 99% 100%;
         transition: opacity 2s ease-in 10s;
@@ -227,7 +227,7 @@ a {
         opacity: 0;
         width: 50%;
         height: 100%;
-        background-image: url(/image/7.png);
+        background-image: url(image/7.png);
         background-repeat: no-repeat;
         background-size: 99% 100%;
         background-position: right;
@@ -237,7 +237,7 @@ a {
     /* Styles for continue button */
 
     .continue-btn {
-        background-image: url(/image/buttons.png);
+        background-image: url(image/buttons.png);
         background-repeat: no-repeat;
         background-size: 100% 100%;
         text-align: center;
@@ -275,7 +275,7 @@ a {
     .wrapper {
         display: grid;
         place-items: center;
-        background-image: url(/image/BG\ 2.png);
+        background-image: url(image/BG\ 2.png);
         background-size: 100% 100%;
     }
 
@@ -296,7 +296,7 @@ a {
     /* Styles for continue button */
 
     .continue-btn {
-        background-image: url(/image/buttons.png);
+        background-image: url(image/buttons.png);
         background-repeat: no-repeat;
         background-size: 100% 100%;
         text-align: center;
